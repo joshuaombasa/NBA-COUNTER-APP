@@ -17,8 +17,9 @@ body {
     background-color: black;
     font-family: clock;
     color: red;
-    font-size: 50px;
+    font-size: 100px;
     border-radius: 10px;
+    width: 200px;
 }
 
 #scoreboard1 {
@@ -39,4 +40,5 @@ body {
 .freethrow, .jumper, .three {
     border: 1px solid #9AABD8;
     border-radius: 5px;
+    width: 67px;
 }
