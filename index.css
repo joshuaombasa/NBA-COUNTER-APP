@@ -1,0 +1,42 @@
+@font-face {
+    font-family: clock;
+    src: url(clock.ttf);
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+#scoreboard1, #scoreboard2 {
+    padding: 20px;
+    background-color: black;
+    font-family: clock;
+    color: red;
+    font-size: 50px;
+    border-radius: 10px;
+}
+
+#scoreboard1 {
+    margin-right: 100px;
+}
+
+#scoreboard2 {
+    margin-left: 0px;
+}
+
+
+.buckets {
+    font-family: clock;
+    color: #9AABD8;
+    
+}
+
+.freethrow, .jumper, .three {
+    border: 1px solid #9AABD8;
+    border-radius: 5px;
+}
