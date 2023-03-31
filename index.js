@@ -47,6 +47,6 @@ function handleJumpShot(eventId) {
 function handleThree(eventId) {
     let teamToUpdate = eventId.slice(0,4)
     teamToUpdate = teamToUpdate.concat("-score")
-    homeCounter += 3
+    awayCounter += 3
     document.getElementById(teamToUpdate).textContent = homeCounter
 }
