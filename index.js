@@ -31,5 +31,5 @@ function handleFreeThrow(eventId) {
 }
 
 function handleJumpShot() {
-    console.log()
+    console.log(eventId)
 }
