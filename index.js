@@ -38,5 +38,5 @@ function handleJumpShot(eventId) {
 
 function handleThree(eventId) {
     const teamToUpdate = eventId.slice(0,4)
-    console.log(eventId.slice(0,4))
+    console.log()
 }
