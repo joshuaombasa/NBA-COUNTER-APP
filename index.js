@@ -14,7 +14,7 @@ document.addEventListener("click", (event) => {
    if (event.target.id === "home-free-throw") {
     handleFreeThrow(event.target.id)
    } else if (event.target.id === "home-jump-shot") {
-    handleJumpShot()
+    handleJumpShot(event.target.id)
    } else if (event.target.id === "home-three-points") {
     handleThree(event.target.id)
    }else if (event.target.id === "away-free-throw") {
