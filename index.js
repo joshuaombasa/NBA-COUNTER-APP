@@ -39,7 +39,7 @@ function handleFreeThrow(eventId) {
 function handleJumpShot(eventId) {
     let teamToUpdate = eventId.slice(0,4)
     teamToUpdate = teamToUpdate.concat("-score")
-    homeCounter += 1
+    homeCounter += 2
     document.getElementById(teamToUpdate).textContent = homeCounter
 
 }
@@ -47,5 +47,6 @@ function handleJumpShot(eventId) {
 function handleThree(eventId) {
     let teamToUpdate = eventId.slice(0,4)
     teamToUpdate = teamToUpdate.concat("-score")
-    console.log(Number(document.getElementById(teamToUpdate).textContent) += 3)
+    homeCounter += 3
+    document.getElementById(teamToUpdate).textContent = homeCounter
 }
