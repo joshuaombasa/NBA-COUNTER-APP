@@ -1,44 +1,98 @@
-@font-face {
-    font-family: clock;
-    src: url(clock.ttf);
-}
-
 body {
+    padding: 0;
     margin: 0;
 }
 
-.container {
+header {
+    width: 550px;
+    margin: 0 auto;
+    background-color: rgb(84, 80, 80);
+    color: white;
+    padding-bottom: 50px;
+}
+
+header > h3{
+   margin: 0;
+   padding: 10px 0;
+   text-align: center;
+}
+
+.home-team {
+    border: 1px solid black;
+    width: 100px;
+}
+
+.away-team {
+    width: 100px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.submit-btn {
+    padding: 10px 20px;
+    font-weight: bold;
+    color: white;
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+}
+
+.home-team, .away-team {
+    padding: 10px 10px;
+}
+
+.teams-playing {
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.score-box {
+    border: 1px solid black;
     display: flex;
-    justify-content: center;
+    width: 550px;
+    margin: 0 auto;
+    background-color: rgb(84, 80, 80);
+    color: white;
+    justify-content: space-around;
+    padding: 50px 0;
 }
 
-#scoreboard1, #scoreboard2 {
+.team-box-styling {
+    border: 1px solid black;
     padding: 20px;
-    background-color: black;
-    font-family: clock;
-    color: red;
-    font-size: 100px;
-    border-radius: 10px;
-    width: 200px;
+   
 }
 
-#scoreboard1 {
-    margin-right: 100px;
+.score-buttons {
+    display: flex;
+    border: 1px solid black;
+    display: flex;
+    width: 550px;
+    margin: 0 auto;
+    background-color: rgb(84, 80, 80);
+    color: white;
+    justify-content: space-around;
+    padding: 50px 0 ;
+
 }
 
-#scoreboard2 {
-    margin-left: 0px;
+.home-buttons, .away-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 }
 
-
-.buckets {
-    font-family: clock;
-    color: #9AABD8;
+.btn-containers {
+    display: flex;
     
 }
 
-.freethrow, .jumper, .three {
-    border: 1px solid #9AABD8;
-    border-radius: 5px;
-    width: 67px;
+.btn-containers button {
+    height: 50px;
+    width: 50px;
+    margin: auto;
+    border-radius: 50%;
+    border: none;
+    font-weight: bold;
 }
