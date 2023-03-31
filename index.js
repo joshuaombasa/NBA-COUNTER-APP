@@ -33,3 +33,7 @@ function handleFreeThrow(eventId) {
 function handleJumpShot() {
     console.log(eventId)
 }
+
+function handleThree() {
+    console.log(eventId)
+}
