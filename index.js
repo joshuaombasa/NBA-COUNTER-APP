@@ -39,7 +39,8 @@ function handleFreeThrow(eventId) {
 function handleJumpShot(eventId) {
     let teamToUpdate = eventId.slice(0,4)
     teamToUpdate = teamToUpdate.concat("-score")
-    console.log(Number(document.getElementById(teamToUpdate).textContent) +=  2)
+    homeCounter += 1
+    document.getElementById(teamToUpdate).textContent = homeCounter
 
 }
 
