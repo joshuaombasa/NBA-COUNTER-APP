@@ -1,6 +1,7 @@
 
 const submitBtn = document.getElementById("submit-btn")
 const teamsDisplay = document.getElementById("teams-display")
+const homeScore = document.getElementById("home-score")
 
 submitBtn.addEventListener('click', () => {
     const homeTeam = document.getElementById("home-team").value
@@ -8,3 +9,13 @@ submitBtn.addEventListener('click', () => {
 
     teamsDisplay.innerHTML = `<h4 class="teams-playing">${homeTeam}  VS  ${awayTeam}</h4>`
 })
+
+document.addEventListener("click", (event) => {
+   if (event.target.id === "home-free-throw") {
+    handleFreeThrow(event.target.id)
+   } else if (event.target.id === "home-jump-shot")
+})
+
+function handleFreeThrow(eventId) {
+  console.log(eventId.slice(3))
+}
