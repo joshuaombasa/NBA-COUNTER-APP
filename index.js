@@ -20,12 +20,16 @@ document.addEventListener("click", (event) => {
    }else if (event.target.id === "away-free-throw") {
     handleFreeThrow(event.target.id)
    }else if (event.target.id === "away-jump-shot") {
-    handleJumpShot()
+    handleJumpShot(event.target.id)
    }else if (event.target.id === "away-three-points") {
-    handleThree()
+    handleThree(event.target.id)
    }
 })
 
 function handleFreeThrow(eventId) {
   console.log(eventId.slice(3))
+}
+
+function handleJumpShot() {
+    console.log()
 }
