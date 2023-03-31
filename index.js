@@ -13,7 +13,19 @@ submitBtn.addEventListener('click', () => {
 document.addEventListener("click", (event) => {
    if (event.target.id === "home-free-throw") {
     handleFreeThrow(event.target.id)
-   } else if (event.target.id === "home-jump-shot")
+   } else if (event.target.id === "home-jump-shot") {
+
+   } else if (event.target.id === "home-three-points") {
+
+   }else if (event.target.id === "away-free-throw") {
+    
+   }else if (event.target.id) {
+    
+   }else if (event.target.id) {
+    
+   }else if (event.target.id) {
+    
+   }
 })
 
 function handleFreeThrow(eventId) {
