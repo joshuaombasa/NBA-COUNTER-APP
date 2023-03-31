@@ -1,39 +1,10 @@
-let scoreEl1 = document.getElementById("scoreboard1")
 
-let counter1 = 0
-scoreEl1.textContent = counter1
+const submitBtn = document.getElementById("submit-btn")
+const teamsDisplay = document.getElementById("teams-display")
 
-function freethrow() {
-    counter1 += 1
-    scoreEl1.textContent = counter1
-}
+submitBtn.addEventListener('click', () => {
+    const homeTeam = document.getElementById("home-team").value
+    const awayTeam = document.getElementById("away-team").value
 
-function jumper() {
-    counter1 += 2
-    scoreEl1.textContent = counter1
-}
-
-function three() {
-    counter1 += 3
-    scoreEl1.textContent = counter1
-}
-
-let scoreEl2 = document.getElementById("scoreboard2")
-
-let counter2 = 0
-scoreEl2.textContent = counter2
-
-function freethrow1() {
-    counter2 += 1
-    scoreEl2.textContent = counter2
-}
-
-function jumper2() {
-    counter2 += 2
-    scoreEl2.textContent = counter2
-}
-
-function three2() {
-    counter2 += 3
-    scoreEl2.textContent = counter2
-}
+    teamsDisplay.innerHTML = `<h4 class="teams-playing">${homeTeam}  VS  ${awayTeam}</h4>`
+})
