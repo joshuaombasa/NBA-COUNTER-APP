@@ -27,16 +27,20 @@ document.addEventListener("click", (event) => {
 })
 
 function handleFreeThrow(eventId) {
-    const teamToUpdate = eventId.slice(0,4)
-  console.log(teamToUpdate)
+    let teamToUpdate = eventId.slice(0,4)
+    teamToUpdate = teamToUpdate.concat("-score")
+    document.getElementById(teamToUpdate)
 }
 
 function handleJumpShot(eventId) {
-    const teamToUpdate = eventId.slice(0,4)
-    console.log(teamToUpdate)
+    let teamToUpdate = eventId.slice(0,4)
+    teamToUpdate = teamToUpdate.concat("-score")
+    document.getElementById(teamToUpdate)
+
 }
 
 function handleThree(eventId) {
-    const teamToUpdate = eventId.slice(0,4)
-    console.log(teamToUpdate)
+    let teamToUpdate = eventId.slice(0,4)
+    teamToUpdate = teamToUpdate.concat("-score")
+    document.getElementById(teamToUpdate)
 }
