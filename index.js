@@ -28,7 +28,7 @@ document.addEventListener("click", (event) => {
 
 function handleFreeThrow(eventId) {
     const teamToUpdate = eventId.slice(0,4)
-  console.log(eventId.slice(0,4))
+  console.log(teamToUpdate)
 }
 
 function handleJumpShot(eventId) {
