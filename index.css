@@ -44,7 +44,13 @@ header > h3{
 .teams-playing {
     text-align: center;
     margin: 0;
-    padding: 10px 0;
+    padding: 10.15px 0;
+}
+
+.teams-display {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 
 .score-box {
