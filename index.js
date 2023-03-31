@@ -34,6 +34,6 @@ function handleJumpShot(eventId) {
     console.log(eventId.slice(0,4))
 }
 
-function handleThree(eventId) {
+function handleThree() {
     console.log(eventId)
 }
