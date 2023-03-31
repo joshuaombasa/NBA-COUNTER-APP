@@ -33,7 +33,7 @@ function handleFreeThrow(eventId) {
 
 function handleJumpShot(eventId) {
     const teamToUpdate = eventId.slice(0,4)
-    console.log(eventId.slice(0,4))
+    console.log(e)
 }
 
 function handleThree(eventId) {
