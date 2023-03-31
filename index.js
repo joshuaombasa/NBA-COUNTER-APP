@@ -30,7 +30,7 @@ function handleFreeThrow(eventId) {
   console.log(eventId.slice(3))
 }
 
-function handleJumpShot() {
+function handleJumpShot(eventId) {
     console.log(eventId)
 }
 
