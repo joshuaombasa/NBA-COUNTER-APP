@@ -27,6 +27,7 @@ document.addEventListener("click", (event) => {
 })
 
 function handleFreeThrow(eventId) {
+    const teamToUpdate = 
   console.log(eventId.slice(0,4))
 }
 
