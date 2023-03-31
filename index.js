@@ -3,6 +3,9 @@ const submitBtn = document.getElementById("submit-btn")
 const teamsDisplay = document.getElementById("teams-display")
 const homeScore = document.getElementById("home-score")
 
+let homeCounter = 0
+let awayCounter = 0
+
 submitBtn.addEventListener('click', () => {
     const homeTeam = document.getElementById("home-team").value
     const awayTeam = document.getElementById("away-team").value
@@ -29,7 +32,8 @@ document.addEventListener("click", (event) => {
 function handleFreeThrow(eventId) {
     let teamToUpdate = eventId.slice(0,4)
     teamToUpdate = teamToUpdate.concat("-score")
-    console.log(Number(document.getElementById(teamToUpdate).textContent) += 1)
+    homeCounter += 1
+    document.getElementById(teamToUpdate).textContent = homeCounter
 }
 
 function handleJumpShot(eventId) {
