@@ -27,7 +27,7 @@ document.addEventListener("click", (event) => {
 })
 
 function handleFreeThrow(eventId) {
-  console.log(eventId.slice(3))
+  console.log(eventId.slice(0,4))
 }
 
 function handleJumpShot(eventId) {
