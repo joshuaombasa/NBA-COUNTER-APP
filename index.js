@@ -31,7 +31,7 @@ function handleFreeThrow(eventId) {
 }
 
 function handleJumpShot(eventId) {
-    console.log(eventId)
+    console.log(eventId.slice(0,4))
 }
 
 function handleThree(eventId) {
