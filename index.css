@@ -1,3 +1,6 @@
+
+
+
 body {
     padding: 0;
     margin: 0;
@@ -18,13 +21,13 @@ header > h3{
 }
 
 .home-team {
-    border: 1px solid black;
+    
     width: 100px;
 }
 
 .away-team {
     width: 100px;
-    border: 1px solid black;
+    
     text-align: center;
 }
 
@@ -54,7 +57,7 @@ header > h3{
 }
 
 .score-box {
-    border: 1px solid black;
+   
     display: flex;
     width: 550px;
     margin: 0 auto;
@@ -65,14 +68,13 @@ header > h3{
 }
 
 .team-box-styling {
-    border: 1px solid black;
+    
     padding: 20px;
    
 }
 
 .score-buttons {
     display: flex;
-    border: 1px solid black;
     display: flex;
     width: 550px;
     margin: 0 auto;
