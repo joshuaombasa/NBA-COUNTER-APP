@@ -35,20 +35,49 @@ function handleFreeThrow(eventId) {
     let teamToUpdate = eventId.slice(0,4)
     teamToUpdate = teamToUpdate.concat("-score")
    
-    document.getElementById(teamToUpdate).textContent = counter.home
+    if (teamToUpdate === "home-score") {
+        counter.home += 1
+        document.getElementById(teamToUpdate).textContent = counter.home
+    } else if (teamToUpdate === "away-score") {
+        counter.away += 1
+        document.getElementById(teamToUpdate).textContent = counter.away
+    }
+    
+    console.log(counter.home)
+    console.log(counter.away)
 }
 
 function handleJumpShot(eventId) {
     let teamToUpdate = eventId.slice(0,4)
     teamToUpdate = teamToUpdate.concat("-score")
-    
-    document.getElementById(teamToUpdate).textContent = counter.home
 
+    if (teamToUpdate === "home-score") {
+        counter.home += 2
+        document.getElementById(teamToUpdate).textContent = counter.home
+    } else if (teamToUpdate === "away-score") {
+        counter.away += 2
+        document.getElementById(teamToUpdate).textContent = counter.away
+    }
+    
+    console.log(counter.home)
+    console.log(counter.away)
+    
 }
 
 function handleThree(eventId) {
     let teamToUpdate = eventId.slice(0,4)
     teamToUpdate = teamToUpdate.concat("-score")
     
-    document.getElementById(teamToUpdate).textContent = counter.away + 3
+    
+    if (teamToUpdate === "home-score") {
+        counter.home += 3
+        document.getElementById(teamToUpdate).textContent = counter.home
+    } else if (teamToUpdate === "away-score") {
+        counter.away += 3
+        document.getElementById(teamToUpdate).textContent = counter.away
+    }
+    
+    console.log(counter.home)
+    console.log(counter.away)
+    
 }
