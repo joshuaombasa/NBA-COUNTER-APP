@@ -8,12 +8,20 @@ let counter = {
     away:0
 }
 
-submitBtn.addEventListener('click', () => {
-    const homeTeam = document.getElementById("home-team").value
-    const awayTeam = document.getElementById("away-team").value
+let homeTeam = ''
+let awayTeam = ''
 
-    teamsDisplay.innerHTML = `<h4 class="teams-playing">${homeTeam}  VS  ${awayTeam}</h4>`
+submitBtn.addEventListener('click', () => {
+    homeTeam = document.getElementById("home-team").value
+    awayTeam = document.getElementById("away-team").value
+
+    teamsDisplay.innerHTML = `<h4 class="teams-playing" id="teams-playing">${homeTeam}  VS  ${awayTeam}</h4>`
+    counter.home = 0
+    counter.away = 0
 })
+
+document.getElementById("home-score").textContent = counter.home
+document.getElementById("away-score").textContent = counter.away
 
 document.addEventListener("click", (event) => {
    if (event.target.id === "home-free-throw") {
@@ -43,8 +51,7 @@ function handleFreeThrow(eventId) {
         document.getElementById(teamToUpdate).textContent = counter.away
     }
     
-    console.log(counter.home)
-    console.log(counter.away)
+    displayLeadingTeam()
 }
 
 function handleJumpShot(eventId) {
@@ -59,9 +66,7 @@ function handleJumpShot(eventId) {
         document.getElementById(teamToUpdate).textContent = counter.away
     }
     
-    console.log(counter.home)
-    console.log(counter.away)
-    
+    displayLeadingTeam()
 }
 
 function handleThree(eventId) {
@@ -77,7 +82,25 @@ function handleThree(eventId) {
         document.getElementById(teamToUpdate).textContent = counter.away
     }
     
-    console.log(counter.home)
-    console.log(counter.away)
+    displayLeadingTeam()
     
 }
+
+function displayLeadingTeam() {
+    if (counter.home > counter.away) {
+        console.log('Home leads')
+        document.getElementById("teams-playing").textContent = `${homeTeam} are Leading by ${counter.home - counter.away}`
+        document.getElementById("teams-playing").style.color = 'gold'
+        document.getElementById("score-box").style.color = 'gold'
+    } else if (counter.home < counter.away) {
+        console.log('Away leads')
+        document.getElementById("teams-playing").textContent = `${awayTeam} are Leading by ${counter.away - counter.home}`
+        document.getElementById("teams-playing").style.color = 'rgb(78, 78, 232)'
+        document.getElementById("score-box").style.color = 'rgb(78, 78, 232)'
+    } else {
+        document.getElementById("score-box").style.color = '#fff'
+        document.getElementById("teams-playing").textContent = `Equal Score`
+        document.getElementById("teams-playing").style.color = '#fff'
+    }
+}
+
