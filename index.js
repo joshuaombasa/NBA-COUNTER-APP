@@ -1,12 +1,15 @@
 
 const submitBtn = document.getElementById("submit-btn")
+
 const teamsDisplay = document.getElementById("teams-display")
+
 const homeScore = document.getElementById("home-score")
 
 let counter = {
     home: 0,
     away:0
 }
+
 
 let homeTeam = ''
 let awayTeam = ''
