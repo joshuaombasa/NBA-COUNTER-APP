@@ -93,12 +93,13 @@ function displayLeadingTeam() {
         document.getElementById("teams-playing").textContent = `${homeTeam} are Leading by ${counter.home - counter.away}`
         document.getElementById("teams-playing").style.color = 'gold'
         document.getElementById("score-box").style.color = 'gold'
-        
+
     } else if (counter.home < counter.away) {
         console.log('Away leads')
         document.getElementById("teams-playing").textContent = `${awayTeam} are Leading by ${counter.away - counter.home}`
         document.getElementById("teams-playing").style.color = 'rgb(78, 78, 232)'
         document.getElementById("score-box").style.color = 'rgb(78, 78, 232)'
+        
     } else {
         document.getElementById("score-box").style.color = '#fff'
         document.getElementById("teams-playing").textContent = `Equal Score`
