@@ -2,6 +2,10 @@
 const submitBtn = document.getElementById("submit-btn")
 const teamsDisplay = document.getElementById("teams-display")
 const homeScore = document.getElementById("home-score")
+const container = document.getElementById("container")
+
+
+container
 
 let counter = {
     home: 0,
